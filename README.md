@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿
+# Báo Cáo Thực Hành Lab 4 - Next.js & Supabase
 
-## Getting Started
+**Họ và tên:** (Điền tên của bạn)
+**MSSV:** 2212394
 
-First, run the development server:
+Đây là repository chứa mã nguồn cho bài thực hành Lab 4 môn Công Nghệ Mới, xây dựng ứng dụng web phân tán với Next.js (App Router) và Supabase. Nó được tạo qua `create-next-app` và lưu trữ tại [github.com/JKhoa/2212394_Lab4](https://github.com/JKhoa/2212394_Lab4).
 
+## 📋 Danh sách Yêu cầu & Hoàn thành
+
+Dưới đây là danh sách các yêu cầu của bài thực hành:
+
+- [x] Tạo project Supabase và lấy credentials 
+- [x] Khởi tạo project Next.JS với Supabase packages 
+- [x] Tạo đầy đủ 3 bảng: profiles, posts, comments 
+- [x] Cấu hình RLS cho tất cả bảng 
+- [x] Implement authentication (Email/Password + OAuth) 
+- [x] Implement CRUD cho posts 
+- [x] Bảo vệ routes cần authentication 
+- [x] Commit code lên GitHub 
+
+## 🚀 Tính năng và Setup
+
+- **Front-end:** Next.js (App Router), Tailwind CSS.
+- **Backend:** Supabase (PostgreSQL, Auth, RLS).
+
+Bạn cần thiết lập `.env.local` với:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_SUPABASE_URL="your-supabase-url"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="your-supabase-anon-key"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Chạy `npm install` và sau đó `npm run dev` để khởi chạy.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
